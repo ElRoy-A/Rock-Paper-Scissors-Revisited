@@ -1,0 +1,107 @@
+/* Variables */
+:root {
+    --clr-bg: #222222;
+    --clr-card-bg: #6E767A;
+
+    --clr-light: #FFFFFF;
+}
+
+/* Default styling */
+html {
+    box-sizing: border-box;
+    font-size: 10px;
+}
+*,*::before,*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: var(--clr-bg);
+    color: var(--clr-light);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Image default sizes */
+img {
+    max-width: 5rem;
+    height: auto;
+}
+
+
+/* Header styling & alignment */
+header {
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: var(--clr-light);
+}
+
+
+/* Player & Computer card alignment */
+section {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+
+/* Player card styling */
+.player-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--clr-card-bg);
+    border: .2rem solid var(--clr-light); border-radius: 1rem;
+    margin-right: 5rem; padding: 1rem;
+}
+
+/* Computer card styling */
+.computer-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--clr-card-bg);
+    border: .2rem solid var(--clr-light); border-radius: 1rem;
+    margin-left: 5rem; padding: 1rem;
+}
+
+
+/* Player & Computer card element styling */
+.title {
+    font-size: 2rem;
+    text-decoration: underline;
+}
+.avatar {
+    max-width: 10rem;
+    height: auto;
+    border-radius: 50%;
+    border: 0.3rem solid var(--clr-light);
+    margin-top: 1rem; margin-bottom: 1rem;
+}
+.score {
+    font-size: 2rem;
+}
+.choices {
+    display: flex;
+    margin-top: 1rem;
+}
+.choice {
+    border: .2rem solid transparent;                    
+    padding-left: .5rem; padding-right: .5rem;
+    transition: transform .2s;
+    cursor: pointer;
+}
+
+
+
+/* Hover options styling */
+.player-choice:hover {
+    transform: scale(1.5);
+}
