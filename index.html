@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Scissors - The Odin Project</title>
+    <title>The Odin Project - Rock Paper Scissors</title>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <div id="overlay"></div>
 
     <header>
         <h1>Rock, Paper, Scissors</h1>
@@ -37,13 +39,13 @@
             <img class="avatar" src="images/computer.png" alt="">
             <div class="score" id="computer-score">0</div>
             <div class="choices">
-                <div class="choice">
+                <div class="choice" id="computer-rock">
                     <img src="images/rock.png" alt="">
                 </div>
-                <div class="choice">
+                <div class="choice" id="computer-paper">
                     <img src="images/paper.png" alt="">
                 </div>
-                <div class="choice">
+                <div class="choice" id="computer-scissors">
                     <img src="images/scissors.png" alt="">
                 </div>
             </div>
